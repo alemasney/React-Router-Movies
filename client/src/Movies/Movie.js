@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import axios from 'axios';
-import MovieInfo from './MovieInfo';
+import MovieCard from './MovieCard';
 
 
 export default class Movie extends Component {
@@ -48,7 +48,7 @@ export default class Movie extends Component {
 
     return (
       <div className="save-wrapper">
-        <MovieInfo movie={this.state.movie} saveMovie={this.saveMovie} />
+        <MovieCard movie={this.state.movie} saveMovie={this.saveMovie} />
       </div>
     );
   }
